@@ -18,7 +18,7 @@ const SocialAuthButtons = () => {
   const navigate = useNavigate();
 
   const handlesignin = () => {
-    console.log('pressd');
+    console.log('provider', auth, provider);
     signInWithPopup(auth, provider)
       .then(res => {
         console.log(res);
@@ -34,6 +34,7 @@ const SocialAuthButtons = () => {
       let exists = await axios.get(
         `http://127.0.0.1:8000/users/${res.user.uid}`
       );
+
       console.log(exists);
       navigate('/');
     } catch (err) {
