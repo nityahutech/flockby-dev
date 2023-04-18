@@ -15,16 +15,6 @@ const firebaseConfig = {
 };
 console.log(firebaseConfig);
 //-------------------------
-// const firebaseConfig = {
-//   apiKey: 'AIzaSyD5BSytx1YhNo7A6p9W1hCPI6DeYTE6dV0',
-//   authDomain: 'fby-dev.firebaseapp.com',
-//   projectId: 'fby-dev',
-//   storageBucket: 'fby-dev.appspot.com',
-//   messagingSenderId: '617707689891',
-//   appId: '1:617707689891:web:91a8d69664eacab410ec16',
-//   measurementId: 'G-8JP5V9SJ0T'
-// };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
